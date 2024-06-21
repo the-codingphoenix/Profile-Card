@@ -2,6 +2,12 @@
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
 
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #151515;
+}
 /* use only the available space inside the 400x400 frame */
 .frame {
     position: absolute;
@@ -28,8 +34,8 @@
     height: 300px;
     width: 330px;
     background: #151515;
-    box-shadow: 0px 5px 10px 0 #A91D3A;
-    border-radius: 10px;
+    box-shadow: 0px 2px 5px 0 #A91D3A;
+    border-radius: 5px;
     overflow: hidden;
 }
 
@@ -68,4 +74,94 @@
     top: -6px;
     left: -6px;
     border-color: #A91D3A transparent #A91D3A #A91D3A;
+}
+
+img {
+    display: block;
+    border-radius: 50%;
+    border-radius: #e93333;
+}
+
+.profile:hover {
+    cursor: pointer;
+}
+
+.profile:hover .circle1 {
+    transform: rotate(360deg);
+}
+
+.profile:hover .circle2 {
+    transform: rotate(-360deg);
+}
+
+.name {
+    font-size: 1rem;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.profession {
+    font-size: .8rem;
+}
+
+.actions {
+    margin-top: 20px;
+}
+
+.btn {
+    display: block;
+    width: 120px;
+    height: 30px;
+    margin: 0 auto 10px auto;
+    background: none;
+    border: 1px solid #A91D3A;
+    border-radius: 20px;
+    font-size: .8rem;
+    color: #A91D3A;
+    font-weight: 600;
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
+
+}
+
+.btn:hover {
+    background: #A91D3A;
+    color: #fff;
+}
+
+.numbers {
+    float: left;
+}
+
+.box {
+    box-sizing: border-box;
+	width: 130px;
+	height: 100px;
+	background: #fa7373;
+    color: #151515;
+	text-align: center;
+	padding-top: 28px;
+	transition: all .4s ease-in-out;
+}
+
+.box:hover {
+    background-color: #A91D3A;
+    color: #fff;
+}
+
+.box:nth-child(2) {
+    margin: 1px 0;
+}
+
+span {
+    display: block;
+}
+
+.value {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.parameter {
+    font-size: .9rem;
 }
